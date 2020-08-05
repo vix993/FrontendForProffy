@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import PageHeader from '../../components/PageHeader';
 import Input from '../../components/Input';
@@ -10,6 +10,18 @@ import warningIcon from '../../assets/images/icons/warning.svg';
 import './styles.css';
 
 function TeacherForm() {
+    const [scheduleItems, setScheduleItems] = useState([
+        { week_day: 0, from: '8:00 AM', to: '4:00 PM' },
+        { week_day: 2, from: '10:00 AM', to: '6:00 PM' },
+    ]);
+
+    function addNewScheduleItem() {
+        setScheduleItems([
+            ...scheduleItems,
+            { week_day: 0, from: '', to: '' }
+        ]);
+    }
+
     return (
         <div id="page-teacher-form" className="container">
         <PageHeader
@@ -51,27 +63,32 @@ function TeacherForm() {
             <fieldset>
                 <legend>
                     Availability
-                    <button type="button">
+                    <button type="button" onClick={addNewScheduleItem}>
                         + Add Availability
                     </button>
                 </legend>
-                <div className="schedule-item">
-                    <Select
-                     name="week_day"
-                     label="Week Day"
-                     options={[
-                        { value: '0', label: 'Sunday' },
-                        { value: '1', label: 'Monday' },
-                        { value: '2', label: 'Tuesday' },
-                        { value: '3', label: 'Wednesday' },
-                        { value: '4', label: 'Thursday' },
-                        { value: '5', label: 'Friday' },
-                        { value: '6', label: 'Saturday' },
-                     ]}
-                    />
-                    <Input name="from" label="From" type="time" />
-                    <Input name="to" label="Until" type="time" />
-                </div>
+
+                {scheduleItems.map((scheduleItem) => {
+                    return (
+                        <div key={scheduleItem.week_day} className="schedule-item">
+                            <Select
+                             name="week_day"
+                             label="Week Day"
+                             options={[
+                                { value: '0', label: 'Sunday' },
+                                { value: '1', label: 'Monday' },
+                                { value: '2', label: 'Tuesday' },
+                                { value: '3', label: 'Wednesday' },
+                                { value: '4', label: 'Thursday' },
+                                { value: '5', label: 'Friday' },
+                                { value: '6', label: 'Saturday' },
+                            ]}
+                            />
+                            <Input name="from" label="From" type="time" />
+                            <Input name="to" label="Until" type="time" />
+                        </div>
+                    );
+                })}
             </fieldset>
             <footer>
                 <p>
