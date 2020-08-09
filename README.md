@@ -6,9 +6,8 @@
 1. [Motivation](#Motivation) 
 2. [Requirements](#Requirements)
 3. [Pages](#Pages)
-    - [Survivors](#Classes)
-    - [Flags](#Connections)
-4. [Additional Notes](#AdditionalNotes)
+    - [Learn](#Learn)
+    - [Teach](#Teach)
 
 ## Motivation
 
