@@ -13,7 +13,7 @@
 
 This repository holds the Frontend for a project called [`Proffy`](https://proffys.vercel.app/), created during [Next Level Week #2](https://nextlevelweek.com/inscricao/2). In this bootcamp, we created a platform in which teachers can promote their services and students can get in contact with them.
 
-You can run it by cloning the repository. Execute the command `npm run start`.
+You can run it by cloning the repository. Running `npm install`, then executing the command `npm run start`.
 
 ## Requirements
 
@@ -23,7 +23,7 @@ Axios, react-router-dom and typescript.
 ## *Learn*
 
 #### Filter Teachers
-Search for teachers that suit your schedule and learning needs..
+Search for teachers that suit your schedule and learning needs.
 ##### /learn
 
 ## *Teach*
