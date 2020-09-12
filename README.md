@@ -15,7 +15,7 @@ This repository holds the Frontend for a project called [`Proffy`](https://proff
 
 The Backend for this project can be found [`here`](https://github.com/vix993/BackendForProffy).
 
-You can run it by cloning the repository. Running `npm install`, then executing the command `npm run start`.
+You can run it by cloning the repository. Running `npm install`, `cd FrontendForProffy`, then executing the command `npm run start`.
 
 ## Requirements
 
