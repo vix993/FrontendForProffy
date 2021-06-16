@@ -11,7 +11,7 @@
 
 ## Motivation
 
-This repository holds the Frontend for a project called [`Proffy`](https://proffys.vercel.app/), created during [Next Level Week #2](https://nextlevelweek.com/inscricao/2). In this bootcamp, we created a platform in which teachers can promote their services and students can get in contact with them.
+This repository holds the Frontend for a project called [`Proffy`](https://proffys.vercel.app/), created during [Next Level Week #2](https://nextlevelweek.com/inscricao/2). In this event, we decided to create a platform in which teachers can promote their services and students can get in contact with them.
 
 The Backend for this project can be found [`here`](https://github.com/vix993/BackendForProffy).
 
